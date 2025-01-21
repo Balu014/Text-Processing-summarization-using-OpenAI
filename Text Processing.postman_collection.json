@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "f602a02d-4fcd-4a0e-9244-128ce27c4cce",
+		"name": "Text Processing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31141322"
+	},
+	"item": [
+		{
+			"name": "Post /process",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/process",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"text\": \"In the bustling city of Lumora, a young inventor named Elara dreamt of building a machine that could capture dreams. Her workshop, a small attic filled with gears, wires, and glowing crystals, was her sanctuary. For years, she studied ancient scrolls and modern texts, blending forgotten knowledge with cutting-edge science. One fateful night, during a thunderstorm, she activated her creation, the Dreamcatcher. The device hummed to life, its crystal core glowing brightly. To her amazement, it worked—capturing not just dreams but fragments of memories and emotions. Elara's invention became the talk of the city, drawing the attention of scholars, dreamers, and even a mysterious figure who sought to use it for darker purposes.\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/process",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"process"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:5000/process",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"text\": \"In the bustling city of Lumora, a young inventor named Elara dreamt of building a machine that could capture dreams. Her workshop, a small attic filled with gears, wires, and glowing crystals, was her sanctuary. For years, she studied ancient scrolls and modern texts, blending forgotten knowledge with cutting-edge science. One fateful night, during a thunderstorm, she activated her creation, the Dreamcatcher. The device hummed to life, its crystal core glowing brightly. To her amazement, it worked—capturing not just dreams but fragments of memories and emotions. Elara's invention became the talk of the city, drawing the attention of scholars, dreamers, and even a mysterious figure who sought to use it for darker purposes.\"\r\n}\r\n\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:5000/process",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"process"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.1.3 Python/3.9.5"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 16:04:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "313"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"summary\": \"In Lumora, young inventor Elara creates the Dreamcatcher, a machine that captures dreams, memories, and emotions. Her groundbreaking invention attracts attention from both admirers and a mysterious figure with sinister intentions, transforming her life and the city’s intrigue.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get /hostory",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/history",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/history",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"history"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:5000/history",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:5000/history",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "5000",
+									"path": [
+										"history"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Werkzeug/3.1.3 Python/3.9.5"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Jan 2025 16:08:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2050"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"history\": {\n        \"1\": {\n            \"input_text\": \"In the bustling city of Lumora, a young inventor named Elara dreamt of building a machine that could capture dreams. Her workshop, a small attic filled with gears, wires, and glowing crystals, was her sanctuary. For years, she studied ancient scrolls and modern texts, blending forgotten knowledge with cutting-edge science. One fateful night, during a thunderstorm, she activated her creation, the Dreamcatcher. The device hummed to life, its crystal core glowing brightly. To her amazement, it worked—capturing not just dreams but fragments of memories and emotions. Elara's invention became the talk of the city, drawing the attention of scholars, dreamers, and even a mysterious figure who sought to use it for darker purposes.\",\n            \"summary\": \"In Lumora, young inventor Elara creates the Dreamcatcher, a machine that captures dreams, memories, and emotions. Her groundbreaking invention attracts attention from both admirers and a mysterious figure with sinister intentions, transforming her life and the city’s intrigue.\"\n        },\n        \"2\": {\n            \"input_text\": \"Deep within the enchanted forest of Eldoria lay the Whispering Tree, a legendary being said to hold the wisdom of ages. Many adventurers sought its guidance, but only the pure of heart could hear its whispers. One day, a young orphan named Kael ventured into the forest, carrying nothing but a faded map and an unshakable hope to find answers about his family. As he approached the tree, the air seemed to shimmer, and a soft voice filled his mind. 'You are more than you believe,' it said. With its guidance, Kael uncovered a hidden truth—he was the last heir to the lost kingdom of Aridane, destined to restore peace to the land.\",\n            \"summary\": \"In the enchanted Eldoria forest, the Whispering Tree shares wisdom with the pure-hearted. Orphan Kael, seeking answers about his family, discovers he is the last heir to the lost kingdom of Aridane, destined to restore peace with the tree's guidance.\"\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
